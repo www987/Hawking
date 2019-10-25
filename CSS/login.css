@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Roboto:500&display=swap');
+/*
+font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+body{
+	background-color: #444;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Roboto', sans-serif;
+}
+section{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #222;
+	opacity: .6;
+	z-index: -1;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+	background-color: #eee;
+	align-items: center;
+}
+
+form h2{
+	font-size: 4.2vw;
+	letter-spacing: .4vw;
+	font-family: 'Righteous', cursive;
+	font-weight: 400;
+}
+
+#loginHeader{
+	opacity: 0;
+	transform: scale(.9);
+}
+
+form input[type=text], form input[type=password], form input[type=submit]{
+	opacity: 0;
+	width: 80%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 2vw;
+	margin-bottom: 1.4vh;
+	background-color: rgba(126, 126, 126, 0.1);
+	padding: .6vw;
+	border-radius: .4vw;
+	border: 0;
+	margin-bottom: 10%;
+	transform: scale(.9);
+	outline: none;
+}
+
+form input[type=text], form input[type=password]{
+	height: 2.4vw;
+}
+
+label{
+	font-family: 'Roboto', sans-serif;
+	font-size: 2vw;
+	width: 80%;
+	height: 0;
+	color: #666;
+	transform: translateY(0.6vw);
+	opacity: 0;
+
+}
+
+form .btnBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form input[type=submit]{
+	background-color: #4e8ca7;
+	color: #FFFFFF;
+	font-family: 'Righteous', cursive;
+	font-weight: 600;
+	letter-spacing: .05vw;
+	font-size: 2.4vw;
+}
+
+#loginForm{
+	opacity: 0;
+	transform: scale(.5);
+}
+
+form a{
+	text-align: center;
+	color: #888;
+	text-decoration: none;
+	font-size: .8vw;
+	opacity: 0;
+	transform: scale(.9);
+	margin-bottom: 6vh;
+}
+#blad{
+	font-size: 1vw;
+	margin-top: -5vh;
+	padding: 10px;
+}
+.btnBox>input:hover{
+	color: #DDDDDD;
+	cursor: pointer;
+	transition: 0.5s;
+	background-color: #303030;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+[class*="col-"] {
+  width: 100vw;
+}
+
+@media only screen and (min-width: 768px) {
+  .col-3 {width: 25vw;}
+  .col-4 {width: 30vw;}
+  .col-10 {width: 83.33vw;}
+  .col-100 {width: 79.33vw;}    
+}
+
+@media only screen and (min-width: 1100px) {
+  .col-s-6 {width: 50vw;}
+  .col-s-6s {width: 46vw;}    
+  .col--100 {width: 79.33vw;}      
+}

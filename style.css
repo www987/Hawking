@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Anton|Modak&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-box{
+    width: 100%;
+    max-height: 100vh;
+    height: 100vh;
+}
+
+.page-header{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 20px;
+    position: fixed;
+    background-color: #222;
+    z-index: 999;
+    box-shadow: -1px 12px 25px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-btn{
+    color: #eee;
+    font-family: 'Anton', sans-serif;
+    margin: 2.6vw;
+    font-size: 3.1vw;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.page-btn:hover{
+    transition: all .5s;
+    text-shadow: 2px 2px 8px red;
+    transform: scale(1.1);
+}
+.page-btn:hover:nth-child(2){
+    text-shadow: 4px 4px 0px green;
+}
+
+.page-contener{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+    display: flex;
+}
+
+.page-menu{
+    width: 30%;
+    height: 100%;
+    background-color: green;
+    position: relative;
+    overflow: hidden;
+    border-left: 6vw solid green;
+}
+
+.page-rotate{
+    width: 100%;
+    clip-path: polygon(0 0, 100% 100%, 100% 0);
+    height: 100%;
+    background-image:url('https://wiedzoholik.pl/uploads/posts/9691/c/zrzut_ekranu_20_uy97ho.png');
+    transform: rotate(0deg);
+    position: absolute;
+    top: 10vh;
+    left: 0vw;
+}
+
+.page-rotate2{
+    width: 100%;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    height: 100%;
+    background-color: blue;
+    transform: rotate(0deg);
+    position: absolute;
+    top: 0vh;
+    left: 0vw;  
+}
+
+.page-photo-slider{
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    background-color: blue;
+    width: 100%;
+    height: 100%;
+}
+
+.page-footer{
+    background-color: chocolate;
+    width: 100%;
+    height: 5%;
+    z-index: 998;
+    position: absolute;
+    box-shadow:inset 1px -12px 25px black;    
+    clear: both;
+}
+.content-box{
+    background: blue;
+    width:70vw;
+}

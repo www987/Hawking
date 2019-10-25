@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Anton|Modak&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	font-family: 'Roboto', sans-serif;
+}
+
+.section {
+	width: 60vw;
+	height: 80vh;
+	padding: 10vh 20vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: white;
+	font-size: 2vw;
+	text-align: justify;
+	position: relative;
+	z-index: -1;
+}
+
+.section p {
+	margin-top: 2vh;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 90;
+}
+
+.btn {
+	background-color: white;
+	border-radius: 2vw;
+	margin: 10px;
+	margin-left: 12px;
+	width: 2vw;
+	height: 2vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px;
+	box-shadow: 4px 4px 4px #111;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+	transition: all 1s;
+	color: white;
+	font-weight: bold;
+	font-size: 2.3vh;
+}
+
+.btn * {
+	padding: 4px;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	width: 20vw;
+	color: black;
+	transition: all 1s;
+}
+
+
+.page-box {
+	width: 100%;
+	max-height: 100vh;
+	height: 100vh;
+}
+
+.page-header {
+	width: 100vw;
+	height: 8vh;
+	position: fixed;
+	background-color: #222;
+	z-index: 999;
+	box-shadow: -1px 12px 25px black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+    
+}
+
+.page-btn > li {
+	list-style: none;
+	position: relative;
+	color: white;
+}
+
+.page-btn > li > a > img {
+	width: 2.5vw;
+	padding-right: 1vw;
+	filter: invert(100%);
+}
+
+
+
+.page-btn > li > a {
+	color: #eee !important;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.15em;
+	transition: 1s transform;
+     font-size: 2.1vw;
+}
+
+.page-btn > li > a:after {
+	background: none repeat scroll 0 0 transparent;
+	bottom: 0;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 50%;
+	position: absolute;
+	background: white;
+	transition: width 0.3s ease 0s, left 0.3s ease 0s;
+	width: 0;
+}
+
+.page-btn > li > a:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+.page-btn {
+	color: #eee;
+	font-family: 'Anton', sans-serif;
+	font-size: 2.5vw;
+	cursor: pointer;
+	transition: all .5s;
+
+}
+
+.page-btn:nth-child(2) {
+	margin-left: 22vw;
+}
+
+.page-contener {
+	height: 100vh;
+	width: 100%;
+	background-color: red;
+	display: flex;
+}
+
+.page-menu {
+	width: 30%;
+	height: 100%;
+	background-color: green;
+	position: relative;
+	overflow: hidden;
+	border-left: 6vw solid green;
+}
+
+.page-rotate {
+	width: 100%;
+	clip-path: polygon(0 0, 100% 100%, 100% 0);
+	height: 100%;
+	background-image: url('https://wiedzoholik.pl/uploads/posts/9691/c/zrzut_ekranu_20_uy97ho.png');
+	transform: rotate(0deg);
+	position: absolute;
+	top: 10vh;
+	left: 0vw;
+}
+
+.page-rotate2 {
+	width: 100%;
+	clip-path: polygon(100% 0, 100% 100%, 0 100%);
+	height: 100%;
+	background-color: blue;
+	transform: rotate(0deg);
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+}
+
+.page-photo-slider {
+	clip-path: polygon(100% 0, 100% 100%, 0 0);
+	background-color: blue;
+	width: 100%;
+	height: 100%;
+}
+
+.page-footer {
+	background-color: chocolate;
+	width: 100%;
+	height: 5%;
+	z-index: 998;
+	position: absolute;
+	box-shadow: inset 1px -12px 25px black;
+	clear: both;
+}
+
+.content-box {
+	background: blue;
+	width: 70vw;
+}
+
+.page.vertical {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 90;
+}
+
+.page.vertical li {
+	background-color: #ddd;
+	border-radius: 2vw;
+	margin: 10px;
+	margin-left: 12px;
+	width: 2vw;
+	height: 2vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 4px;
+	box-shadow: 4px 4px 4px #111;
+	cursor: pointer;
+	text-align: center;
+	overflow: hidden;
+	transition: all 1s;
+	color: #ddd;
+	font-weight: bold;
+	font-size: 2.3vh;
+}
+
+.page.vertical li * {
+	padding: 4px;
+	text-transform: uppercase;
+}
+
+.page.vertical li:hover {
+	width: 20vw;
+	color: #222;
+	transition: all 1s;
+}
+
+.page.vertical .active {
+	background-color: #ff3232;
+	color: #ff3232;
+}
+
+.page.vertical .active:hover {}
+
+#page1 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url("../img/buildingsIndex.jpg");
+}
+
+#pleft {
+	margin-top: 15vh;
+	margin-left: -5vw;
+	width: 38vw;
+	float: left;
+}
+
+#page2 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/disabledIndex.jpg");
+	background-position: -0 -10vh;
+}
+
+#page2 > div {
+	width: 90vw;
+	padding-left: 10vw;
+}
+
+#pleft > img {
+	float: left;
+	width: 300px;
+}
+
+#fim {
+	margin-top: 5vh;
+	margin-left: 9vw;
+	float: right;
+	width: 18vw;
+	filter: invert(100);
+}
+
+#fim2 {
+	margin-top: 15vh;
+	float: left;
+	width: 40vw;
+	box-shadow: 6px 6px 6px black;
+	transition-duration: 0.5s;
+}
+
+#pleft2 {
+	margin-top: 15vh;
+	margin-left: 5vw;
+	width: 40vw;
+	float: left;
+}
+
+a {
+	text-decoration: none !important;
+	color: white;
+}
+
+#nbttn {
+	width: 30vw;
+	margin-top: 50vh;
+	margin-left: 50vw;
+	margin-right: 10vw;
+	font-size: 3vw;
+	padding: 0.5vw;
+	border: 5px solid white;
+	text-align: center;
+	color: white;
+	transition-duration: 0.5s;
+
+}
+
+#nbttn:hover {
+	color: #CCC;
+	border-color: #CCC;
+	transform: scale(1.2);
+}
+
+#page3 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/globeIndex.jpg");
+}
+
+#pleft4 {
+	margin-top: 15vh;
+	width: 45vw;
+	float: left;
+}
+
+#page3 > div {
+	width: 90vw;
+	padding-left: 10vw;
+}
+
+#fim4 {
+	margin-top: 17vh;
+	filter: invert(100);
+	margin-left: 10vw;
+	width: 18vw;
+	overflow: hidden;
+}
+
+#page4 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/officeIndex.jpg");
+}
+
+#page4 > div {
+	width: 87vw;
+	padding-left: 13vw;
+    height: 90vh;
+}
+
+#fim5 {
+	margin-top: 6vh;
+	float: left;
+	width: 20vw;
+	filter: invert(100);
+}
+
+#pleft5 {
+	margin-top: 6vh;
+	margin-left: 5vw;
+	width: 50vw;
+	float: left;
+}
+
+#nbttn2 {
+	width: 40vw;
+	margin-top: 60vh;
+	margin-left: 20vw;
+	margin-right: 10vw;
+	font-size: 3.2vw;
+	padding: 0.2vw;
+	border: 5px solid white;
+	text-align: center;
+	color: white;
+	transition-duration: 0.5s;
+}
+
+#nbttn2:hover {
+	color: #CCC;
+	border-color: #CCC;
+	transform: scale(1.2);
+	background-color: #2560C4;
+}
+
+#page5 {
+	background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("../img/meetingIndex.jpg");
+    
+}
+
+#page5 > div{
+    width: 70vw;
+    height: 80vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.authorBox{
+    height: calc(100%/3);
+    margin:1vh 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.authorTitle{
+    width: 100%;
+    display: flex;
+    height: 30%;
+}
+.authorName{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    
+}
+.authorName img{
+    width:5vw;
+    filter: invert(100%);
+    display: block;
+    margin:0 3vw 0 2vw;
+}
+
+.authorBox h3{
+    text-decoration: underline;
+}
+.page-btn > li > a:hover {
+	transform: scale(1.1);
+}
+
+@media only screen and (max-width: 900px) {
+    .section h2{
+        font-size:6vw;
+    }
+    #pleft{
+        font-size:3vw;
+    }
+    .page-header a{
+        font-size:4.3vw !important;
+    }
+    .page-header li{
+        margin: 0;
+        padding: 0;
+    }
+    .page-header img{
+        width: 7vw;
+    }
+    .page-btn>li>a>img{
+        width: 4.5vw;
+        height: 4.5vw;
+    }
+    
+    #page5 > div{
+        width: 70vw;
+        height: 60vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        margin: 1vw 0 0 0;
+    }
+    #page5 h2{
+        font-size:7.5vw;
+    }
+    #page5 h3{
+        font-size:5.2vw;
+    }
+    #page5 h4{
+        font-size:4vw;
+    }
+    #page5 img{
+        width: 9vw;
+    }
+     #pleft5, #pleft4, #pleft2{
+        font-size:3vw;
+    }
+    #page2 img{
+        height: 13vh;
+        width: 40vw;
+    }
+    .page p{
+        font-size: 2vw;
+    }
+    #page1 #pleft{
+        margin: 0 2vw 0 0;
+        font-size: 4vw;
+    }
+    #page1 img{
+        margin: 0;
+    }
+    #page1 h2{
+        margin: 0 0 2vh 0;
+    }
+   
+}
+
+@media only screen and (max-width: 450px){
+     #pleft5{
+        font-size:3.5vw;
+    }
+}
+@media only screen and (max-height: 400px){
+     #pleft5{
+        font-size:3vw;
+    }
+}

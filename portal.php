@@ -81,10 +81,8 @@
                 <h3>$row[3]</h3>
             </div>
             <div class = "kolumna3">
-                <div style="display: none;">
-                    <label><input type="checkbox"> dodaj do obserwowanych</label>
-                </div>
                 <div>
+                    <label><input type="button" value= 'Zwin/Rozszerz' class='inputt'> </label>
                     <h4>$tag</h4>
                 </div>
             </div>
@@ -149,6 +147,27 @@ END;
 				}
 			})
 		</script>
+        <script>
+            
+            function rozszerz(){
+                console.log("test");
+                console.log(this);
+                var id = this.id;
+                var port = document.querySelectorAll(".port")[id];
+                var kolumna1 = document.querySelectorAll(".kolumna1")[id];
+                var kolumna3P = kolumna1.querySelector("p");
+                port.style.height="auto";
+                kolumna1.style.height="auto";
+                //kolumna3p.style.height="auto";
+                //kolumna3p.style.overflow="auto";
+                
+            }
+            var input = document.querySelectorAll(".inputt");
+            for(i=0;i<input.length;i++){
+                input[i].addEventListener("click", rozszerz);
+                input[i].setAttribute("id", i);
+            }
+        </script>
 </body>
 
 </html>

@@ -245,11 +245,32 @@ body {
 	margin-top: 18vh;
 }
 .kolumna3>div{
-	float: left;
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.kolumna3>div input{
+    margin: 0 1vw 0 0; 
+    border-radius: 5px;
+    border: 0;
+    padding: 0.4vw;
+    cursor: pointer;
+    transition: .5s;
+    background: #cbc8c8;
+}
+.kolumna3>div input:hover{
+    background: #dcd9d8;
 }
 
 .kolumna1 p{
     max-width: 50vw;
+    max-height: 20vh;
+    overflow: hidden;
+}
+.kolumna1{
+    max-width: 50vw;
+    max-height: 16vh;
+    overflow: hidden;
 }
 .page-header {
 	width: 100vw;

@@ -60,11 +60,7 @@ if(isset($_POST["title"])){
             $wszystkoOk = false;
             $_SESSION["e_city"] = "Miasto musi mieć od 3 do 40 znaków!";
         }
-                            //SPRAWDZAMY OPIS//
-        if(strlen($description) > 1000 || strlen($description) <= 50 ){
-            $wszystkoOk = false;
-            $_SESSION["e_description"] = "Opis musi być w przedziale 50-1000 znaków!";
-        }
+
         
         if($wszystkoOk){
             foreach($tag as $i => $el){
